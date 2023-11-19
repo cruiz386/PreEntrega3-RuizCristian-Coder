@@ -9,6 +9,9 @@
             @include font_style(1.5rem, 500); 
             color: rgb(236, 232, 232);
         }
+        &-seccionProductos{
+            color: black;
+        }
     }
     &-titulo {
         @include font_style(2rem, 500);

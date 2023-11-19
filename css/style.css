@@ -110,18 +110,28 @@
 
 .seccion-Productos__separador {
   background-color: #171717;
-  margin: 10px 0 10px 0;
+  margin: 30px 0 20px 0;
 }
 .seccion-Productos__titulo {
   color: blanchedalmond;
   font-size: 2rem;
   margin-left: 10px;
 }
+.seccion-Productos__titulo--fdoGris {
+  background-color: grey;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  margin: 10px 0 30px 0;
+}
 
 .p-descripcion-productos {
   font-size: 1.5rem;
   font-weight: 500;
   color: rgb(236, 232, 232);
+}
+.p-descripcion-seccionProductos {
+  color: black;
 }
 .p-titulo {
   font-size: 2rem;
