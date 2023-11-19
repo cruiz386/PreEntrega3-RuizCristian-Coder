@@ -1,0 +1,68 @@
+@media (min-width: 992px) {
+    .navBar {
+        display: flex !important;
+        justify-content: space-around !important;
+    }
+    .nav {
+        &-link {
+            font-size: 1.3rem !important;
+        }
+    }
+    .imagen {
+        &_logo {
+            width: 180px;
+        }
+    }
+    a {
+        &.nav {
+            &-link {
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+        }
+    }
+
+    .col {
+        &-lg {
+            flex: 1 0 0%;
+            text-align: center;
+            font-size: 3rem;
+        }
+    }
+
+    .navbar {
+        > .container-fluid {
+            display: flex;
+            flex-wrap: inherit;
+            align-items: center;
+            justify-content: space-around !important;
+        }
+    }
+    .carrousel {
+        &-caption {
+            position: absolute;
+            top: 20px;
+            right: 15%;
+            left: 15%;
+            padding-top: 1.25rem;
+            padding-bottom: 1.25rem;
+            color: #fff;
+            text-align: center;
+        }
+    }
+    .contenedor {
+        &-consulta {
+            padding-left: 30px !important;
+        }
+        &-ubicacion {
+            padding-right: 30px !important;
+        }
+    }
+    .mapa {
+        width: 350px;
+        border-radius: 20px;
+    }
+    .form {
+        width: 350px;
+    }
+}

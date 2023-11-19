@@ -1,0 +1,16 @@
+.imagen {
+    &_logo {
+        width: 150px;
+    }
+}
+
+.img {
+    &-descripcion {
+        &-productos {
+            height: 60%;
+            width: 400px;
+            border: #fff solid;
+            border-radius: 10px;
+        }
+    }
+}

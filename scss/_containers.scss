@@ -1,0 +1,32 @@
+.contenedor {
+    &_nav {
+        background-color: #171717 !important;
+
+        &_footer {
+            background-color: #1e1d1d9e !important;
+            padding: 20px 0 20px 0;
+            border-top: 3px solid #938f8f67;
+        }
+    }
+
+    &-grid-productos {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "prod-1 prod-1 prod-2 prod-2"
+            "prod-1 prod-1 prod-2 prod-2"
+            "prod-3 prod-3 prod-4 prod-4"
+            "prod-3 prod-3 prod-4 prod-4";
+        justify-items: center;
+        gap: 10px;
+        // background-image: url("../assets/imagenes/mostrador-pasteleria2.jpg");
+        // background-size: cover;
+        // background-position: center;
+        // background-repeat: no-repeat;
+    }
+
+    &-descripcion {
+        margin: 20px 0 20px 0;
+    }
+}

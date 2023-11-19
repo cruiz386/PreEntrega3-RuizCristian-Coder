@@ -1,0 +1,79 @@
+@media (min-width: 1200px) {
+    .contenedor {
+        &-grid {
+            &-productos {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas:
+                    "prod-1 prod-2 prod-3 prod-4"
+                    "prod-1 prod-2 prod-3 prod-4"
+                    "prod-1 prod-2 prod-3 prod-4"
+                    "prod-1 prod-2 prod-3 prod-4";
+                gap: 10px;
+            }
+        }
+    }
+
+    .navBar {
+        display: flex !important;
+        justify-content: flex-end !important;
+    }
+
+    .nav {
+        &-link {
+            font-size: 1.3rem !important;
+        }
+    }
+
+    .imagen {
+        &_logo {
+            width: 250px;
+        }
+    }
+
+    a {
+        &.nav {
+            &-link {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .mi {
+        &-carrousel {
+            height: 600px !important;
+        }
+    }
+
+    .form {
+        &-pagina {
+            width: 800px;
+        }
+    }
+
+    .carrousel {
+        &-caption {
+            position: absolute;
+            top: 20px;
+            right: 15%;
+            left: 15%;
+            padding-top: 1.25rem;
+            padding-bottom: 1.25rem;
+            color: #fff;
+            text-align: center;
+        }
+    }
+
+    .contenedor {
+        &-consulta {
+            padding-left: 70px !important;
+        }
+        &-ubicacion {
+            padding-right: 70px !important;
+        }
+    }
+}

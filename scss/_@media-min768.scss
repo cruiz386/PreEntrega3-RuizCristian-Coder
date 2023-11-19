@@ -1,0 +1,33 @@
+@media (min-width: 768px) {
+
+    .navbar {
+        > .container-fluid {
+            display: flex;
+            flex-wrap: inherit;
+            align-items: center;
+            justify-content: space-around !important;
+        }
+    }
+    .form {
+        width: 380px;
+        &-pagina {
+            width: 500px;
+        }
+    }
+    .carrousel {
+        &-caption {
+            position: absolute;
+            top: 20px;
+            right: 15%;
+            left: 15%;
+            padding-top: 1.25rem;
+            padding-bottom: 1.25rem;
+            color: #fff;
+            text-align: center;
+        }
+    }
+    .mapa {
+        width: 380px;
+        border-radius: 20px;
+    }
+}
