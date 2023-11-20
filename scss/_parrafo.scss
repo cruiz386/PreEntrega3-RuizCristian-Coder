@@ -1,5 +1,5 @@
 @mixin font_style($size,$weight){
-    font-size: $size;
+    font-size: $size !important;
     font-weight: $weight;
 }
 
@@ -15,6 +15,9 @@
     }
     &-titulo {
         @include font_style(2rem, 500);
+        &--nosotros{
+            @include font_style(1.5rem, 300);
+        }
     }
     &-nosotros {
         max-width: 500px;

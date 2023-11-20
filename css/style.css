@@ -126,7 +126,7 @@
 }
 
 .p-descripcion-productos {
-  font-size: 1.5rem;
+  font-size: 1.5rem !important;
   font-weight: 500;
   color: rgb(236, 232, 232);
 }
@@ -134,8 +134,12 @@
   color: black;
 }
 .p-titulo {
-  font-size: 2rem;
+  font-size: 2rem !important;
   font-weight: 500;
+}
+.p-titulo--nosotros {
+  font-size: 1.5rem !important;
+  font-weight: 300;
 }
 .p-nosotros {
   max-width: 500px;
