@@ -1,0 +1,20 @@
+@mixin font_style($size, $weight) {
+    font-size: $size !important;
+    font-weight: $weight;
+}
+
+@mixin font_style($size, $weight) {
+    font-size: $size;
+    font-weight: $weight;
+}
+
+@mixin card_style($width, $br-t, $br-r, $br-b, $br-l, $bcolor, $bstyle, $bwidth) {
+    width: $width;
+    border-radius: $br-t $br-r $br-b $br-l;
+    border: $bcolor $bstyle $bwidth;
+}
+
+@mixin card_grid($area, $bg-color) {
+    grid-area: $area;
+    background-color: $bg-color;
+}

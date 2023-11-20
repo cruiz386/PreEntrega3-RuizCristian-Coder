@@ -17,20 +17,17 @@
     color: rgb(225, 221, 221);
 }
 
-
 .contact {
     &-subtitles {
         font-weight: 700;
     }
 }
 
-$colors-rs: (
-    facebook: rgb(14, 55, 236),
-    whatsapp: rgb(27, 157, 79),
-);
-
 @each $rsocial, $hover-color in $colors-rs {
-    .fa-#{$rsocial}:hover {
-        color: $hover-color;
+    .fa-#{$rsocial} {
+        &:hover {
+            color: $hover-color;
+            transform: scale(1.3);
+        }
     }
 }

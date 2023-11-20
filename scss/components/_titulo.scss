@@ -1,0 +1,13 @@
+.titulo {
+    &-producto {
+        @include font_style(1.5rem, 200);
+        color: black;
+    }
+    &-contacto {
+        @include font_style(1.5rem, 700);
+        color: black;
+    }
+    &-carrousel {
+        @include font_style(3rem, 500);
+    }
+}

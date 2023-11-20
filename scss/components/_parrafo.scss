@@ -1,21 +1,16 @@
-@mixin font_style($size,$weight){
-    font-size: $size !important;
-    font-weight: $weight;
-}
-
 .p {
     &-descripcion {
         &-productos {
-            @include font_style(1.5rem, 500); 
+            @include font_style(1.5rem, 500);
             color: rgb(236, 232, 232);
         }
-        &-seccionProductos{
+        &-seccionProductos {
             color: black;
         }
     }
     &-titulo {
         @include font_style(2rem, 500);
-        &--nosotros{
+        &--nosotros {
             @include font_style(1.5rem, 300);
         }
     }

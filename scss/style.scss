@@ -1,17 +1,25 @@
-@import "./reset";
-@import "./contacto";
-@import "./imagenes";
-@import "./productos";
-@import "./parrafo";
-@import "./btn";
-@import "./titulo";
-@import "./containers";
-@import "./offcanvas";
+/* @ @ @ @ @ @ @ @ @ @ @ @ @ @       RESET - VARIABLES Y MIXIN      @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @*/
+@import "./reset/reset";
+@import "./reset/vars";
+@import "./reset/mixin";
 
-/* @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @       MEDIA QUERIES      @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @*/
+/* @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @       PLAYOUT      @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @*/
+@import "./layout/body";
+@import "./layout/contacto";
+@import "./layout/containers";
+@import "./layout/imagenes";
+@import "./layout/productos";
 
-@import "./@media-max577";
-@import "./@media-min578-max767";
-@import "./@media-min768";
-@import "./@media-min992";
-@import "./@media-min1200";
+/* @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @@ @       COMPONENTES      @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @@ @*/
+@import "./components/btn";
+@import "./components/nav";
+@import "./components/offcanvas";
+@import "./components/parrafo";
+@import "./components/titulo";
+
+/* @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @       MEDIA QUERIES      @ @ @ @ @ @ @ @ @@ @ @ @ @ @ @ @ @ @ @*/
+@import "./reset/@media-max577";
+@import "./reset/@media-min578-max767";
+@import "./reset/@media-min768";
+@import "./reset/@media-min992";
+@import "./reset/@media-min1200";
