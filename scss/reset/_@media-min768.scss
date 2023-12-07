@@ -1,12 +1,4 @@
 @media (min-width: 768px) {
-    .navbar {
-        > .container-fluid {
-            display: flex;
-            flex-wrap: inherit;
-            align-items: center;
-            justify-content: space-around !important;
-        }
-    }
     .form {
         width: 380px;
         &-pagina {

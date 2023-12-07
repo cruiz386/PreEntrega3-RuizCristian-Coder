@@ -1,12 +1,21 @@
 .nav {
     &-link {
-        font-size: 1rem !important;
+        font-size: 1rem;
         color: white;
     }
     &-item {
         &:hover {
             border-bottom: white solid 1px;
-            font-size: 1rem !important;
+            font-size: 1rem;
         }
+    }
+}
+
+.navbar {
+    > .container-fluid {
+        display: flex;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: space-around !important;
     }
 }

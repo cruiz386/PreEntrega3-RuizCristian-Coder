@@ -47,10 +47,10 @@
 }
 
 .contenedor_nav {
-  background-color: #171717 !important;
+  background-color: #171717;
 }
 .contenedor_nav_footer {
-  background-color: rgba(30, 29, 29, 0.6196078431) !important;
+  background-color: #171717;
   padding: 20px 0 20px 0;
   border-top: 3px solid rgba(147, 143, 143, 0.4039215686);
 }
@@ -60,7 +60,7 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "prod-1 prod-1 prod-2 prod-2" "prod-1 prod-1 prod-2 prod-2" "prod-3 prod-3 prod-4 prod-4" "prod-3 prod-3 prod-4 prod-4";
   justify-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 .contenedor-descripcion {
   margin: 20px 0 20px 0;
@@ -147,18 +147,31 @@
   margin-top: 10px;
 }
 .btn-hover:hover {
-  background-color: rgba(207, 201, 201, 0.77) !important;
-  color: rgb(6, 6, 6) !important;
-  border-color: black !important;
+  background-color: rgba(236, 232, 232, 0.77) !important;
+  color: rgb(6, 6, 6);
+  border-color: black;
 }
 
 .nav-link {
-  font-size: 1rem !important;
+  font-size: 1rem;
   color: white;
 }
 .nav-item:hover {
   border-bottom: white solid 1px;
-  font-size: 1rem !important;
+  font-size: 1rem;
+}
+
+.navbar > .container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: inherit;
+      flex-wrap: inherit;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute !important;
+      justify-content: space-around !important;
 }
 
 .offcanvas {
@@ -206,26 +219,10 @@
     display: none;
   }
   .contenedor-grid-productos {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "prod-1 prod-1 prod-1 prod-1" "prod-2 prod-2 prod-2 prod-2" "prod-3 prod-3 prod-3 prod-3" "prod-4 prod-4 prod-4 prod-4";
-    gap: 20px;
   }
   .contenedor-consulta {
     padding: 20px 0 20px 0;
-  }
-  .navbar > .container-fluid {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: inherit;
-        flex-wrap: inherit;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute !important;
-        justify-content: space-around !important;
   }
   .form {
     width: 250px;
@@ -238,30 +235,11 @@
   }
 }
 @media (min-width: 578px) and (max-width: 767px) {
-  .contenedor-grid-productos {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "prod-1 prod-1 prod-2 prod-2" "prod-1 prod-1 prod-2 prod-2" "prod-3 prod-3 prod-4 prod-4" "prod-3 prod-3 prod-4 prod-4";
-    gap: 20px;
-  }
   .contenedor-descripcion {
     display: none;
   }
   .contenedor-consulta {
     padding: 20px 0 20px 0;
-  }
-  .navbar > .container-fluid {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: inherit;
-        flex-wrap: inherit;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute !important;
-        justify-content: space-around !important;
   }
   .mapa {
     width: 350px;
@@ -274,18 +252,6 @@
   }
 }
 @media (min-width: 768px) {
-  .navbar > .container-fluid {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: inherit;
-        flex-wrap: inherit;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute !important;
-        justify-content: space-around !important;
-  }
   .form {
     width: 380px;
   }
@@ -309,14 +275,14 @@
 }
 @media (min-width: 992px) {
   .navBar {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -ms-flex-pack: distribute !important;
-        justify-content: space-around !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .nav-link {
-    font-size: 1.3rem !important;
+    font-size: 1.3rem;
   }
   .imagen_logo {
     width: 180px;
@@ -331,18 +297,6 @@
             flex: 1 0 0%;
     text-align: center;
     font-size: 3rem;
-  }
-  .navbar > .container-fluid {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: inherit;
-        flex-wrap: inherit;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute !important;
-        justify-content: space-around !important;
   }
   .carrousel-caption {
     position: absolute;
@@ -372,22 +326,18 @@
   .contenedor-grid-productos {
     padding-top: 10px;
     padding-bottom: 10px;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "prod-1 prod-2 prod-3 prod-4" "prod-1 prod-2 prod-3 prod-4" "prod-1 prod-2 prod-3 prod-4" "prod-1 prod-2 prod-3 prod-4";
-    gap: 10px;
   }
   .navBar {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: end !important;
         -ms-flex-pack: end !important;
             justify-content: flex-end !important;
   }
   .nav-link {
-    font-size: 1.3rem !important;
+    font-size: 1.3rem;
   }
   .imagen_logo {
     width: 250px;
@@ -397,7 +347,7 @@
     margin-right: 20px;
   }
   .mi-carrousel {
-    height: 600px !important;
+    height: 600px;
   }
   .form-pagina {
     width: 800px;

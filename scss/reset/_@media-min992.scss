@@ -1,11 +1,11 @@
 @media (min-width: 992px) {
     .navBar {
-        display: flex !important;
-        justify-content: space-around !important;
+        display: flex ;
+        justify-content: space-around ;
     }
     .nav {
         &-link {
-            font-size: 1.3rem !important;
+            font-size: 1.3rem;
         }
     }
     .imagen {
@@ -30,14 +30,7 @@
         }
     }
 
-    .navbar {
-        > .container-fluid {
-            display: flex;
-            flex-wrap: inherit;
-            align-items: center;
-            justify-content: space-around !important;
-        }
-    }
+
     .carrousel {
         &-caption {
             position: absolute;

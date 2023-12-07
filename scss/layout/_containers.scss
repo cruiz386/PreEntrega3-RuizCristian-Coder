@@ -1,9 +1,9 @@
 .contenedor {
     &_nav {
-        background-color: #171717 !important;
+        background-color: #171717;
 
         &_footer {
-            background-color: #1e1d1d9e !important;
+            background-color: #171717;
             padding: 20px 0 20px 0;
             border-top: 3px solid #938f8f67;
         }
@@ -19,7 +19,7 @@
             "prod-3 prod-3 prod-4 prod-4"
             "prod-3 prod-3 prod-4 prod-4";
         justify-items: center;
-        gap: 10px;
+        gap: 20px;
 
     }
 
